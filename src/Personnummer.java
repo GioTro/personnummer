@@ -102,22 +102,17 @@ public class Personnummer {
     }
 
     /**
-     * Tries to call constructor Personnummer. Will print error message and
-     * stacktrace if verbose is set to true.
+     * Tries to call constructor Personnummer.
      * 
      * @see Personnummer
      * 
      * @param data string represantation of the personnummer to get validated.
-     * @param verbose set to true in order to print stack trace and message.
      * @return true if valid else it will return false if a check fails.
      */
 
-    public static boolean valid(String data, boolean verbose) {
+    public static boolean valid(String data) {
         try {
             new Personnummer(data);
-            if (verbose) {
-                System.out.println(data + " is valid.");
-            }
             return true;
         } catch (Exception e) {
             System.out.println(data + " is not valid.");

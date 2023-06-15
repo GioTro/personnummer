@@ -34,17 +34,14 @@
 
         public static boolean valid(String data, boolean verbose) {
             try {
-                new Personnummer.Organisationsnummer(data);
-                if (verbose) {
-                    System.out.println(data + " is valid.");
-                }
+                new Organisationsnummer(data);
                 return true;
             } catch (Exception e) {
                 System.out.println(data + " is invalid.");
                 e.printStackTrace();
                 System.out.println();
+                return false;
             }
-            return false;
         }
     }
 }
