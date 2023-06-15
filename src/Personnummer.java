@@ -1,5 +1,3 @@
-package personnummer;
-
 import java.util.regex.*;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
